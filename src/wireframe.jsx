@@ -1,9 +1,9 @@
 import React from "react";
 import Header from "./components/header";
 import "./wireframe.css";
-import MtEden from "./assets/Images/MtEden.jpg";
-import FlowerClock from "./assets/Images/FlowerClock.jpg";
-import Britomart from "./assets/Images/Britomart.jpg";
+import Stocks from "./assets/Images/Stocks.jpg";
+import MarketingPlans from "./assets/Images/MarketingPlans.jpg";
+import Leadership from "./assets/Images/Leadership.jpg";
 
 export default function Wireframe() {
   return (
@@ -12,7 +12,8 @@ export default function Wireframe() {
 
       <main className="hero">
         <div className="hero-text">
-          <h1>Explore all New<br />Zealand has to offer.</h1>
+          <h1>HELPING MARKETERS</h1>
+          <h2>BE BRILLIANT.</h2>
           <div className="search-bar">
             <div className="search-wrapper">
               <input type="text" />
@@ -24,26 +25,26 @@ export default function Wireframe() {
 
       <section className="features">
         <div className="card">
-          <img src={MtEden} alt="Mt Eden" className="card-image" />
+          <img src={Stocks} alt="Stocks" className="card-image" />
           <div className="card-content">
-            <h3>Mt Eden</h3>
-            <p>A stunning view from the volcanic cone.</p>
+            <h3>Stakeholder Management</h3>
+            <p>Leading marketing strategies.</p>
           </div>
         </div>
 
         <div className="card">
-          <img src={FlowerClock} alt="Flower Clock" className="card-image" />
+          <img src={MarketingPlans} alt="Marketing Plans" className="card-image" />
           <div className="card-content">
-            <h3>Flower Clock</h3>
-            <p>A unique floral landmark in the city.</p>
+            <h3>Breakthrough Marketing Plans</h3>
+            <p>A masterclass for all best sellers.</p>
           </div>
         </div>
 
         <div className="card">
-          <img src={Britomart} alt="Britomart" className="card-image" />
+          <img src={Leadership} alt="Leadership" className="card-image" />
           <div className="card-content">
-            <h3>Britomart</h3>
-            <p>The heart of Auckland's shopping and dining.</p>
+            <h3>Leadership in Marketing</h3>
+            <p>Find out how to make a difference.</p>
           </div>
         </div>
       </section>
