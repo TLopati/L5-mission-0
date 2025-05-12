@@ -62,7 +62,7 @@ The final page includes:
 
 ##  GitHub Repository
 
- [Paste your GitHub Repo link here](https://github.com/your-username/mission-0-landing-page)
+- https://github.com/TLopati/L5-mission-0.git
 
 ---
 
@@ -70,5 +70,3 @@ The final page includes:
 
 - GitHub repo pushed   
 - README file updated   
-- Word document includes repo link + screenshots 
-- File named: **M0.docx** 
