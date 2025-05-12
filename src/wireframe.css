@@ -1,0 +1,196 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background: rgb(168, 168, 168);
+  border-bottom: 1px solid #ccc;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+}
+
+.hero {
+  position: relative;
+  padding: 4rem 2rem;
+  text-align: center;
+  color: #ffffff;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  z-index: 1;
+  overflow: visible;
+  background-image: url('/src/assets/Images/Auckland City.jpg'); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.226); 
+  z-index: 0;
+}
+
+.hero-text {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  padding-bottom: -200px; 
+  position: relative;
+  z-index: 1;
+}
+
+
+.hero-text h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: left;
+  margin: 0;
+}
+
+.search-bar {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 0;
+}
+
+.search-wrapper {
+  width: 100%;
+  max-width: 1000px;
+  height: 70px;
+  margin: 0 auto;
+  display: flex;
+  overflow: hidden;
+}
+  
+.search-wrapper input {
+  flex: 1;
+  height: 70px;
+  border: none;
+  font-size: 20px;
+  outline: none;
+  padding-left: 15px;
+}  
+  
+.search-wrapper button {
+  padding: 0 80px;
+  background-color: #383838;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+  border-left: 1px solid black;
+}
+  
+.features {
+  margin-top: -40px;
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem;
+  background-color: #ffffff;
+  height: 500px;
+ }
+  
+.card {
+  width: 25%;
+  background: #e0e0e0;
+  text-align: start;
+  box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
+  overflow: hidden;
+  height: 393px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+}
+
+.card img.card-image {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  display: block;
+}
+  
+.image-placeholder {
+  width: 100%;
+  height: 300px;
+  background-color: #e7e7e7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+  
+.card-content {
+  padding: 1rem 1.5rem;
+}
+  
+.card img.card-image {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  display: block;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  .features {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    height: 1500px;
+  }
+
+    .hero-text {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    align-items: center;
+  }
+
+  .card {
+    min-width: 100%;
+    min-height: 393px;
+    border-radius: 10px;
+  }
+
+  .search-wrapper {
+    flex-direction: column;
+    max-width: 90%;
+    width: 100%;
+    height: 150px;
+    border: none;
+    gap: 10px;
+  }
+
+  .search-wrapper input,
+  .search-wrapper button {
+    width: 100%;
+    height: 70px;
+    font-size: 18px;
+  }
+
+  .search-wrapper input {
+    padding: 0 15px;
+  }
+
+  .search-wrapper button {
+    border: none;
+    background-color: #383838;
+    color: white;
+    cursor: pointer;
+  }
+}
